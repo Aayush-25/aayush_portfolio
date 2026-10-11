@@ -1,6 +1,6 @@
 # Aayush Upadhyay — Portfolio
 
-[View the live portfolio](https://aayush-digital-studio.stormyhill8.chatgpt.site)
+[View the live portfolio](https://aayushupadhyay.dev)
 
 A responsive personal portfolio featuring EvalOps, NEXUS, and JobFlowQ, with an off-white and sage palette, interactive geometric 3D artwork, and scroll-driven project displays.
 
@@ -15,8 +15,8 @@ Open http://localhost:8080. This is a static website; no package installation or
 ## Files
 
 - `index.html`: page content and links
-- `style.css`, `natural.css`, `motion.css`: layout, theme, and project perspective effects
-- `app.js`: project details and copy-email interaction
+- `style.css`, `natural.css`, `motion.css`, `evidence.css`: layout, theme, perspective effects, and project narratives
+- `app.js`: project details, shareable project URLs, and clipboard interactions
 - `scene.js`: Three.js artwork and motion controls
 - `motion.js`: scroll and pointer interactions
 - `assets/`: local fonts, Three.js, favicon, and downloadable resume
@@ -25,7 +25,7 @@ The resume download uses the PDF supplied by Aayush. LinkedIn, GitHub, and email
 
 ## Accessibility and hosting
 
-Project dialogs support keyboard dismissal and restore focus. Reduced-motion preferences disable automatic movement; the animation control pauses both the artwork and scrolling effects. The content remains accessible without WebGL.
+Project dialogs support keyboard dismissal, direct links such as `/#project-evalops`, browser back/forward, and focus restoration. Implementation references link to the relevant source files. Reduced-motion preferences disable automatic movement; the animation control pauses both the artwork and scrolling effects. The content remains accessible without WebGL.
 
 All required assets use relative paths, so the repository root can be served by a static host or GitHub Pages. `.nojekyll` keeps the site as plain static files. Hosting settings are managed separately from the source.
 

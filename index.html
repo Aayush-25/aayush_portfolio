@@ -5,10 +5,15 @@
 <meta name="theme-color" content="#f7f8f2">
 <title>Aayush Upadhyay — Engineer, builder, curious mind</title>
 <meta name="description" content="Aayush Upadhyay's selected work: EvalOps, NEXUS, and JobFlowQ. Software, data, AI applications, and thoughtfully crafted interfaces.">
+<link rel="canonical" href="https://aayushupadhyay.dev/">
+<meta property="og:url" content="https://aayushupadhyay.dev/">
+<meta property="og:image" content="https://aayushupadhyay.dev/assets/social-preview.png">
+<meta property="og:image:alt" content="Aayush Upadhyay — Software, data and AI. Selected projects: EvalOps, NEXUS and JobFlowQ.">
+<meta name="twitter:card" content="summary_large_image">
 <meta property="og:title" content="Aayush Upadhyay — Selected work"><meta property="og:description" content="Software. Data. AI. Thoughtful interfaces. Explore three projects in an interactive 3D studio."><meta property="og:type" content="website">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="assets/space-grotesk.ttf" as="font" type="font/ttf" crossorigin>
-<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="natural.css"><link rel="stylesheet" href="motion.css">
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="natural.css"><link rel="stylesheet" href="motion.css"><link rel="stylesheet" href="evidence.css">
 <script src="app.js" defer></script><script src="motion.js" defer></script><script type="module" src="scene.js"></script>
 </head>
 <body><div class="reading-progress" aria-hidden="true"><span></span></div>
@@ -22,7 +27,8 @@
  <div class="hero-copy">
   <p class="availability"><span></span>Open to engineering opportunities</p>
   <h1>Aayush<br>Upadhyay<span class="name-dot">.</span></h1>
-  <p class="hero-intro">I turn ideas into software, data stories,<br>and tools people can use.</p>
+  <p class="hero-intro">I build tools for working with data,<br>understanding AI, and getting things done.</p>
+  <p class="hero-credentials">CS graduate, SRM <span aria-hidden="true">/</span> <span class="credential-skills">Python · Java · SQL</span></p>
   <div class="hero-actions"><a class="button primary" href="#work">Explore my work <span aria-hidden="true">↓</span></a><a class="resume-link" href="assets/Aayush-Upadhyay-Resume.pdf" download>Download resume <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M5 16v5h14v-5"/></svg></a></div>
   <div class="hero-socials"><a href="https://www.linkedin.com/in/aayush-upadhyay-63bb3a27b" target="_blank" rel="noopener">LinkedIn ↗</a><a href="https://github.com/Aayush-25" target="_blank" rel="noopener">GitHub ↗</a></div>
  </div>
@@ -39,7 +45,7 @@
  <div class="hero-footer"><span>Software, data & creative problem-solving</span><span>Scroll to discover <span aria-hidden="true">↓</span></span></div>
 </section>
 <section class="work-section wrap" id="work">
- <div class="section-heading"><div><p class="section-kicker">A few things I’ve built</p><h2>Selected work<span>.</span></h2></div><p>Three projects, explored from every angle.<br>Scroll through the work.</p></div>
+ <div class="section-heading"><div><p class="section-kicker">A few things I’ve built</p><h2>Selected work<span>.</span></h2></div><p>The problem, the implementation,<br>and the decisions behind each project.</p></div>
  <div class="project-grid">
  <article class="project-card eval-card">
   <button class="project-visual eval-visual" data-project="evalops" aria-label="Explore EvalOps project">
@@ -47,9 +53,10 @@
    <div class="mini-dashboard" aria-hidden="true"><div class="mini-top"><span class="mini-logo">◈</span> evalops <span class="mini-menu">•••</span></div><div class="mini-body"><div class="mini-stats"><span>Faithfulness<strong>0.92</strong></span><span>Latency<strong>840<span> ms</span></strong></span></div><div class="chart"><svg viewBox="0 0 250 80"><defs><linearGradient id="chart-fill" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#b5a0fa" stop-opacity=".3"/><stop offset="1" stop-color="#b5a0fa" stop-opacity="0"/></linearGradient></defs><path class="chart-area" d="M0 65 25 53 50 58 75 33 100 41 125 24 150 31 175 15 200 22 225 10 250 17V80H0Z"/><path class="chart-line" d="M0 65 25 53 50 58 75 33 100 41 125 24 150 31 175 15 200 22 225 10 250 17"/></svg></div><div class="trace-line"><i></i><span>Trace evaluated</span><em>complete</em></div></div></div>
    <span class="mockup-note">Illustrative interface</span><span class="visual-open" aria-hidden="true">↗</span>
   </button>
-  <div class="project-info"><div class="project-meta"><span>Python / FastAPI / RAGAS</span><span>Featured project</span></div>
+  <div class="project-info"><p class="project-number">01 / INSPECT & EVALUATE</p><div class="project-meta"><span>Python / FastAPI / RAGAS</span><span>Featured project</span></div>
   <h3><button data-project="evalops">EvalOps <span aria-hidden="true">↗</span></button></h3>
-  <p>Understand what your LLM is doing, one trace at a time. A toolkit for capturing responses, tracking latency, and evaluating quality.</p>
+  <p>Capturing a response is only the start. I built a trace-to-evaluation workflow to inspect what happened and why.</p>
+  <dl class="project-evidence"><div><dt>Built</dt><dd>Python SDK → FastAPI → evaluation → dashboard.</dd></div><div><dt>Decision</dt><dd>Keep trace collection separate from scoring, so each step can be inspected and tested.</dd></div></dl>
   <div class="project-links"><button class="text-button" data-project="evalops">Inside the project <span aria-hidden="true">+</span></button><a href="https://github.com/Aayush-25/evalops" target="_blank" rel="noopener" aria-label="EvalOps source on GitHub">GitHub</a></div></div>
  </article>
  <article class="project-card nexus-card">
@@ -59,9 +66,10 @@
    <div class="mini-chat" aria-hidden="true"><div class="mini-top"><span class="nexus-glyph">◇</span> NEXUS</div><div class="chat-question">What connects these ideas?</div><div class="chat-answer"><span>◇</span><p>Start with the context.<br>Find the connections.<br>Keep the source in sight.</p></div><div class="source-pills"><span>Document 1</span><span>Document 2</span></div><div class="chat-input">Ask your documents <span>↑</span></div></div>
    <span class="mockup-note">Illustrative interface</span><span class="visual-open" aria-hidden="true">↗</span>
   </button>
-  <div class="project-info"><div class="project-meta"><span>Python / LangChain / FAISS</span><span>RAG application</span></div>
+  <div class="project-info"><p class="project-number">02 / RETRIEVE & EXPLAIN</p><div class="project-meta"><span>Python / LangChain / FAISS</span><span>RAG application</span></div>
   <h3><button data-project="nexus">NEXUS <span aria-hidden="true">↗</span></button></h3>
-  <p>A conversation with your documents, with the context to back it up.</p>
+  <p>Ask questions across your documents, then inspect the passages behind the answer.</p>
+  <dl class="project-evidence"><div><dt>Built</dt><dd>Document ingestion, FAISS retrieval, and streamed answers with source excerpts.</dd></div><div><dt>Decision</dt><dd>Reuse the saved index when files are unchanged; rebuild it when the source changes.</dd></div></dl>
   <div class="project-links"><button class="text-button" data-project="nexus">Inside the project <span aria-hidden="true">+</span></button><a href="https://github.com/Aayush-25/Nexus" target="_blank" rel="noopener" aria-label="NEXUS source on GitHub">GitHub</a></div></div>
  </article>
  <article class="project-card job-card">
@@ -70,9 +78,10 @@
    <div class="queue-art" aria-hidden="true"><div class="queue-rail"></div><div class="queue-node node-one"><span>submit</span><b>+</b></div><div class="queue-node node-two"><span>process</span><b>↻</b></div><div class="queue-node node-three"><span>complete</span><b>✓</b></div><div class="event-chip"><i></i> lifecycle event published</div></div>
    <span class="mockup-note">Conceptual flow</span><span class="visual-open" aria-hidden="true">↗</span>
   </button>
-  <div class="project-info"><div class="project-meta"><span>Java / Spring Boot / Kafka</span><span>Job processing</span></div>
+  <div class="project-info"><p class="project-number">03 / PROCESS & RECOVER</p><div class="project-meta"><span>Java / Spring Boot / Kafka</span><span>Job processing</span></div>
   <h3><button data-project="jobflowq">JobFlowQ <span aria-hidden="true">↗</span></button></h3>
-  <p>Jobs, retries, and lifecycle events. A look at what happens after “submit.”</p>
+  <p>A submitted job needs more than a success message. This project makes progress, retries, and failure states visible.</p>
+  <dl class="project-evidence"><div><dt>Built</dt><dd>Job APIs, a polling worker, bounded retries, and Kafka lifecycle events.</dd></div><div><dt>Decision</dt><dd>Move jobs to a dead-letter state after the retry limit, making persistent failures inspectable.</dd></div></dl>
   <div class="project-links"><button class="text-button" data-project="jobflowq">Inside the project <span aria-hidden="true">+</span></button><a href="https://github.com/Aayush-25/jobflowq" target="_blank" rel="noopener" aria-label="JobFlowQ source on GitHub">GitHub</a></div></div>
  </article>
  </div>
@@ -82,11 +91,11 @@
  <div class="about-detail"><p class="large-copy">I’m a Computer Science graduate from SRM, interested in software, data, and solving practical problems.</p><p>I like taking a question apart, understanding how the pieces connect, and building something people can use. My projects explore that through APIs, data pipelines, retrieval, and evaluation.</p><p>This portfolio brings another interest into the mix: clear interfaces, small details, and interaction that feels considered.</p>
  <div class="experience-block"><span class="experience-year">2026</span><div><h3>Data Analyst Intern</h3><p>Bluestock Fintech</p><p class="experience-description">Built a Python ETL pipeline for 564,160 records and investigated ingestion failures to improve validation and error handling.</p></div></div>
  <div class="experience-block"><span class="experience-year">2022–26</span><div><h3>B.Tech, Computer Science</h3><p>SRM Institute of Science and Technology</p><p class="experience-description">Specialization in Artificial Intelligence and Machine Learning.</p></div></div>
- <div class="toolbox"><span>In my toolkit</span><ul><li>Python</li><li>Java</li><li>SQL</li><li>FastAPI</li><li>Spring Boot</li><li>LangChain</li><li>Git</li><li>Docker</li></ul></div>
+ <div class="toolbox"><span>Used in my projects</span><ul><li>Python</li><li>Java</li><li>SQL</li><li>FastAPI</li><li>Spring Boot</li><li>LangChain</li><li>Git</li><li>Docker</li></ul></div>
  </div>
 </section>
-<section class="contact-section wrap" id="contact"><div class="contact-orbit" aria-hidden="true"></div><p class="section-kicker">Let’s talk</p><h2>Have a role<br>or project in mind?<span>.</span></h2><div class="contact-actions"><a class="button primary" href="mailto:aayushupadhyaydev@gmail.com">Say hello <span aria-hidden="true">↗</span></a><button class="copy-email" id="copy-email">Copy email <span aria-hidden="true">⧉</span></button></div><a class="email-address" href="mailto:aayushupadhyaydev@gmail.com">aayushupadhyaydev@gmail.com</a><p class="copy-status" id="copy-status" role="status" aria-live="polite"></p></section>
+<section class="contact-section wrap" id="contact"><div class="contact-orbit" aria-hidden="true"></div><p class="section-kicker">Let’s talk</p><h2>Have a role<br>or project in mind<span>?</span></h2><div class="contact-actions"><a class="button primary" href="mailto:aayushupadhyaydev@gmail.com">Say hello <span aria-hidden="true">↗</span></a><button class="copy-email" id="copy-email">Copy email <span aria-hidden="true">⧉</span></button></div><a class="email-address" href="mailto:aayushupadhyaydev@gmail.com">aayushupadhyaydev@gmail.com</a><p class="copy-status" id="copy-status" role="status" aria-live="polite"></p></section>
 </main>
 <footer class="site-footer wrap"><a class="footer-name" href="#home">Aayush Upadhyay</a><p>Thanks for taking a look.</p><div><a href="https://github.com/Aayush-25" target="_blank" rel="noopener">GitHub ↗</a><a href="https://www.linkedin.com/in/aayush-upadhyay-63bb3a27b" target="_blank" rel="noopener">LinkedIn ↗</a><a href="assets/Aayush-Upadhyay-Resume.pdf" download>Resume ↓</a></div></footer>
-<dialog id="project-dialog" aria-labelledby="dialog-title"><div class="dialog-shell"><button class="dialog-close" aria-label="Close project details">×</button><p class="dialog-type" id="dialog-type"></p><h2 id="dialog-title"></h2><p class="dialog-intro" id="dialog-intro"></p><div class="dialog-tags" id="dialog-tags"></div><div class="dialog-content" id="dialog-content"></div><div class="dialog-bottom"><a id="dialog-github" class="button primary" target="_blank" rel="noopener">Explore the code <span aria-hidden="true">↗</span></a><button class="text-button dialog-close-text">Back to work</button></div></div></dialog>
+<dialog id="project-dialog" aria-labelledby="dialog-title"><div class="dialog-shell"><button class="dialog-close" aria-label="Close project details">×</button><p class="dialog-type" id="dialog-type"></p><h2 id="dialog-title"></h2><p class="dialog-intro" id="dialog-intro"></p><div class="dialog-tags" id="dialog-tags"></div><div class="dialog-content" id="dialog-content"></div><div class="project-share"><button id="copy-project-link" class="text-button" type="button">Copy project link ↗</button><span id="project-copy-status" role="status" aria-live="polite"></span></div><div class="dialog-bottom"><a id="dialog-github" class="button primary" target="_blank" rel="noopener">Explore the code <span aria-hidden="true">↗</span></a><button class="text-button dialog-close-text">Back to work</button></div></div></dialog>
 </body></html>
