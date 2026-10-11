@@ -1,0 +1,21 @@
+/* Project exhibits move through a shared perspective as the reader scrolls. */
+.reading-progress{position:fixed;inset:0 0 auto;height:3px;z-index:30;pointer-events:none}.reading-progress span{display:block;width:100%;height:100%;background:#55744d;transform:scaleX(var(--reading,0));transform-origin:left}
+.project-watermark{position:absolute;left:7%;bottom:5%;font:500 clamp(60px,8vw,120px)/1 var(--display);letter-spacing:-.065em;color:#283e2710;pointer-events:none;z-index:-1}
+.project-visual{transform-style:preserve-3d;will-change:transform;box-shadow:0 28px 40px -34px #34462d80;transform:perspective(1200px) translateY(var(--lift,0px)) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));transition:box-shadow .3s}
+.project-visual::after{content:"";position:absolute;inset:0;border:1px solid #ffffff60;border-radius:inherit;pointer-events:none}
+.project-info{transform:translateY(var(--copy-lift,0px));transition:transform .12s ease-out}
+.mini-dashboard,.mini-chat{box-shadow:18px 30px 34px #30472130}.mini-dashboard{transform:perspective(900px) translateZ(50px) rotateY(-15deg) rotateX(12deg) rotateZ(-8deg)}.mini-chat{transform:perspective(900px) translateZ(65px) rotateY(-13deg) rotateX(10deg) rotateZ(7deg)}
+.project-visual:focus-visible{outline-offset:10px}.project-grid{perspective:1800px}.work-section{overflow:visible}
+@media(min-width:901px) and (prefers-reduced-motion:no-preference){
+.project-grid{display:flex;flex-direction:column;gap:120px;padding-top:30px}
+.project-grid>.project-card,.project-grid>.eval-card{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:70px;align-items:center;min-height:680px;padding:0 0 90px;border-bottom:1px solid var(--line)}
+.project-grid>.nexus-card{grid-template-columns:minmax(0,1fr) minmax(0,1.35fr)}.nexus-card .project-visual{grid-column:2;grid-row:1}.nexus-card .project-info{grid-column:1;grid-row:1}
+.project-card .project-visual,.eval-card .project-visual{height:500px;position:sticky;top:max(60px,calc((100vh - 500px)/2));overflow:visible}
+.project-card h3,.eval-card h3{font-size:clamp(44px,5vw,68px);letter-spacing:-2px;margin-bottom:25px}.project-card .project-meta{font-size:11px;margin:0 0 25px}.project-card .project-info>p{font-size:17px;max-width:30ch}.project-links,.eval-card .project-links{margin-top:35px;padding-top:20px}.project-visual .visual-tag{top:28px;left:28px;font-size:12px}.project-visual .mockup-note{bottom:24px;font-size:10px}.visual-open{bottom:22px;right:24px}
+.eval-card .mini-dashboard{top:113px;left:11%;width:78%;height:265px}.eval-card .mini-top{height:44px}.eval-card .mini-body{padding:20px 24px}.eval-card .chart{height:90px}.nexus-card .mini-chat{top:126px;left:23%;width:71%;height:255px}.nexus-card .mini-top{height:46px;font-size:15px}.nexus-card .chat-question{margin:15px 17px 13px 55px;padding:12px;font-size:12px}.nexus-card .chat-answer{font-size:11px;gap:12px;margin-inline:18px}.nexus-card .source-pills{font-size:9px;margin:12px 0 12px 45px}.nexus-card .chat-input{font-size:10px;margin:0 17px;padding:8px}.nexus-card .document-back{height:250px;top:84px;left:11%;width:60%;padding:30px}.nexus-card .document-back i{height:4px;margin-top:23px}
+.job-card .queue-art{inset:80px 30px 45px}.job-card .queue-node{width:95px;height:110px}.job-card .queue-node b{font-size:36px}.job-card .queue-node>span{font-size:12px}.job-card .event-chip{bottom:44px;font-size:11px}
+.about-section{padding-top:130px}.contact-section{padding-block:140px 110px}
+}
+@media(min-width:901px) and (max-width:1100px){.project-grid>.project-card,.project-grid>.eval-card{gap:40px;min-height:590px}.project-card .project-visual,.eval-card .project-visual{height:425px}.eval-card .mini-dashboard{top:90px;height:245px}.eval-card .chart{height:75px}.nexus-card .mini-chat{height:245px;top:100px}.nexus-card .chat-question{font-size:10px}.nexus-card .chat-answer{font-size:9px}.job-card .queue-node{width:68px;height:88px}.job-card .queue-art{inset:60px 18px 38px}}
+@media(max-width:900px){.project-visual{will-change:auto}.project-watermark{font-size:62px}.project-info{transform:none}.project-visual{transform:perspective(1000px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg))}}
+@media(prefers-reduced-motion:reduce){.project-visual,.project-info{transform:none!important;will-change:auto}.reading-progress{display:none}}

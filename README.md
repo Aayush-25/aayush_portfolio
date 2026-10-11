@@ -1,30 +1,34 @@
-# Aayush Upadhyay — Personal portfolio
+# Aayush Upadhyay — Portfolio
 
-A single-page portfolio built with HTML, CSS, and JavaScript. It presents selected projects, skills, experience, education, and contact links.
+[View the live portfolio](https://aayush-digital-studio.stormyhill8.chatgpt.site)
+
+A responsive personal portfolio featuring EvalOps, NEXUS, and JobFlowQ, with an off-white and sage palette, interactive geometric 3D artwork, and scroll-driven project displays.
 
 ## Run locally
 
-```bash
-git clone https://github.com/Aayush-25/aayush_portfolio.git
-cd aayush_portfolio
+```sh
 python3 -m http.server 8080 --bind 127.0.0.1
 ```
 
-Open `http://localhost:8080`. No package installation or build step is required. Python is only used to serve the static page; it is not an application backend.
+Open http://localhost:8080. This is a static website; no package installation or build step is required.
 
-## Structure
+## Files
 
-`index.html` contains the markup, styles, and browser JavaScript. Google Fonts and Three.js are loaded from external services, so those enhancements need an internet connection.
+- `index.html`: page content and links
+- `style.css`, `natural.css`, `motion.css`: layout, theme, and project perspective effects
+- `app.js`: project details and copy-email interaction
+- `scene.js`: Three.js artwork and motion controls
+- `motion.js`: scroll and pointer interactions
+- `assets/`: local fonts, Three.js, favicon, and downloadable resume
 
-The page includes project links, scroll animations, a Three.js background, and direct contact links. Email uses `mailto:`; there is no contact-form submission service.
+The resume download uses the PDF supplied by Aayush. LinkedIn, GitHub, and email links appear on the page. Project previews are labeled illustrative interfaces rather than live application screenshots.
 
-## Editing
+## Accessibility and hosting
 
-- Update project content in the `projects` section.
-- Update skills, experience, and education in their corresponding sections.
-- Keep the `contact` section and resume link current before sharing the site.
-- Preview at desktop and mobile widths after changing content.
+Project dialogs support keyboard dismissal and restore focus. Reduced-motion preferences disable automatic movement; the animation control pauses both the artwork and scrolling effects. The content remains accessible without WebGL.
 
-For my current backend projects, see [JobFlowQ](https://github.com/Aayush-25/jobflowq), [EvalOps](https://github.com/Aayush-25/evalops), and [NEXUS](https://github.com/Aayush-25/Nexus).
+All required assets use relative paths, so the repository root can be served by a static host or GitHub Pages. `.nojekyll` keeps the site as plain static files. Hosting settings are managed separately from the source.
 
-[GitHub profile](https://github.com/Aayush-25) · [LinkedIn](https://www.linkedin.com/in/aayush-upadhyay-63bb3a27b/) · [Email](mailto:aayushupadhyay025@gmail.com)
+The bundled Three.js license is in `assets/three-LICENSE.txt`.
+
+[GitHub](https://github.com/Aayush-25) · [LinkedIn](https://www.linkedin.com/in/aayush-upadhyay-63bb3a27b) · [Email](mailto:aayushupadhyaydev@gmail.com)
